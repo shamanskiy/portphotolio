@@ -1,0 +1,187 @@
+@media only screen and (max-width: 1200px) {
+    
+    .row { padding: 0 1%; }
+    
+    .section-photos {margin-bottom: 6px;}
+    
+    .photo { width: 100%; }
+    
+    .left {margin-left: 0;}
+    
+    .right { margin-right: 0; }
+}
+
+@media only screen and (max-width: 1023px) {
+    
+    body { font-size: 22px; }
+    
+    .graph img {
+        height: 106px;
+        margin-top: 20px;
+    }
+    
+    header h1 { margin-top: 20px; }
+    
+    
+    
+    .main { padding-bottom: 25px; }
+    
+    .albums-panel { margin-top: 15px; }
+    
+    .section-aboutme h2 { margin: 25px auto; }
+    
+    .section-aboutme h2:after { margin-top: 25px; }
+    
+    .section-aboutme p { margin-bottom: 25px; }
+    
+    footer h2 { margin-top: 25px; }
+    
+    .section-album h2 { margin-top: 0px; }
+    
+    .section-photos {margin-bottom: 4px;}
+    
+    .photo { 
+        width: 100%;
+        margin-bottom: -8px; }
+    
+    .left {margin-left: 0;}
+    
+    .right { margin-right: 0; }
+}
+
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 19px; }
+    
+    .graph img {
+        float: right;
+        height: 90px;
+        margin-top: 10px;
+    }
+    
+    header h1 { margin-top: 10px; }
+    
+    .row { padding: 0 1%; }
+    
+    .nav-panel { width: 10%; }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    
+    .main-nav { 
+        position: absolute;
+        display: none;    
+        margin-top: 0px;
+        z-index: 999;
+        background-color: #fff;
+        padding-top: 10px;
+        padding-bottom: 1px;
+        width: 200px;
+    }
+    
+    .main-nav.sticky {
+        background-color: #000;
+    }
+    
+    .albums-panel { width: 90%;}
+    
+    .albums-panel { margin-top: 0px; }
+    
+    .mobile-header { display: block; }
+    
+    .album-info h3 {display: none; }
+    
+    .main { padding-bottom: 20px; }
+    
+    .section-aboutme h2 { margin: 20px auto; }
+    
+    .section-aboutme h2:after { margin-top: 20px; }
+    
+    .section-aboutme p {
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 20px;
+    }
+    
+    footer h2 { margin-top: 20px; }
+    
+    .email { margin-top: 10px; }
+
+    .social-links { 
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+ 
+    .section-album h2 { margin-top: 0px; }
+    
+    .section-photos {margin-bottom: 3px;}
+    
+    .photo { 
+        width: 100%; 
+        margin-bottom: -6px; }
+    
+    .left {margin-left: 0;}
+    
+    .right { margin-right: 0; }
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .nav-panel { width: 15%; }
+    
+    .albums-panel { 
+        margin-top: 5px;
+        width: 85%;
+    }
+    
+    .album-row { 
+        margin-bottom: 0;
+    }
+    
+    .album {
+        margin-bottom: 5px;
+    }
+    
+    .main { padding-bottom: 15px; }
+    
+    .section-aboutme h2 { margin: 15px auto; }
+    
+    .section-aboutme h2:after { margin-top: 15px; }
+    
+    .section-aboutme p { 
+        width: 95%;
+        margin: 0 2.5%;
+        margin-bottom: 15px;
+    }
+    
+    footer h2 { margin-top: 15px; }
+    
+    .email { margin-top: 10px; }
+
+    .social-links { 
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .created-by { font-size: 60%; }
+    
+    .section-album h2 { margin-top: -8px; }
+    
+    .section-photos {
+        margin-top: 5px;
+        margin-bottom: 0px; 
+    }
+    
+    .photo { 
+        width: 100%; 
+        margin-bottom: 0px;
+    }
+    
+    .left {margin-left: 0;}
+    
+    .right { margin-right: 0; }
+    
+}

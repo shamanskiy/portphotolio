@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SophieSophie's photos.">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../static/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../static/resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <title>SophieSophie</title>
+    </head>
+
+    <body>
+        <header>   
+            <a href="{{url_for('home')}}"><h1>&nbsp;&nbsp;&nbsp;&nbsp;Sophie<br>Sophie</h1></a>
+            <figure class="graph">
+                <img src="../static/resources/img/mountain.svg" alt="Graphics">
+            </figure>
+        </header>
+        
+        <section class="main">
+        <div class="row">
+            <div class="nav-panel">     
+                <nav> 
+                    <a class="mobile-menu-btn js-menu-btn"><ion-icon name="menu" class="js-menu-icon"></ion-icon></a>
+                    <ul class="main-nav">
+                        <li>
+                            <a class="menu-item" id="js-navBtn1">Albums</a>
+                            <div class="dropdown js-navDrop1">
+                                <a class="album-link" href="{{url_for('white_sea')}}">White Sea</a>
+                                <a class="album-link" href="{{url_for('crimea')}}">Crimea</a>   
+                            </div>
+                        </li>
+                        <li><a class="menu-item" href="#aboutme">About me</a></li>
+                        <li><a class="menu-item" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>       
+            </div>
+
+            <div class="albums-panel js-album-panel">
+                <div class="album-row">
+                    <div class="col span-1-of-2">
+                        <a href="{{url_for('white_sea')}}">
+                            <figure class="album">
+                                <h3 class="mobile-header"> White Sea </h3>
+                                <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/f01.JPG" alt="White Sea">
+                                <div class="album-info">
+                                    <h3 class="hidden-header">White Sea</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <a href="{{url_for('crimea')}}">
+                            <figure class="album">
+                                <h3 class="mobile-header"> Crimea </h3>
+                                <img style="margin:0 -16.666%; width:133.333%;" src="../static/resources/img/album2/f01.jpg" alt="Crimea" >
+                                <div class="album-info">
+                                    <h3 class="hidden-header">Crimea</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </section>
+        
+        <section class="section-aboutme" id="aboutme">
+        <div class="row">
+            <h2>About me</h2>
+            <p>I want to explore when and where I live in this world using photography. <br> Small things can have enormous meaning.</p>
+        </div>
+        </section>
+        
+        <footer id="contacts">
+        <div class="row">
+            <h2>Contacts</h2>
+            <p class="email">photosophiesophie@gmail.com</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/sophie.sophie.718" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="telegram"><ion-icon name="ios-send"></ion-icon></a></li>
+                <li><a href="https://instagram.com/artpiccolasophie?utm_source=ig_profile_share&igshid=7g464c0unc2v" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>           
+        </div>
+            
+        <p class="created-by"><a href="https://github.com/Shamanskiy">Created by Alexander Shamanskiy</a></p> 
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="../static/vendors/js/jquery.waypoints.min.js"></script>
+        <script src="../static/resources/js/script.js"></script>
+        
+    </body>
+</html>
+
+<!--
+Created by Alexander Shamanskiy, 2019
+-->
