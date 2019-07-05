@@ -24,6 +24,7 @@ var initPhotoSwipe = function(gallerySelector) {
             slide.el = figure; // save link to element for getThumbBoundsFn
             slides.push(slide);
         }
+
         return slides;
     };
 
@@ -44,10 +45,10 @@ var initPhotoSwipe = function(gallerySelector) {
         if(!clickedListItem) {
             return;
         }
-
-        var clickedGallery = clickedListItem.parentNode.parentNode.parentNode,
-            nodeIndex = 0,
-            index;
+        
+        var clickedGallery = clickedListItem.parentNode.parentNode.parentNode;
+        var nodeIndex = 0;
+        var index;
         var figures = clickedGallery.getElementsByTagName('figure');
 
         for (var i = 0; i < figures.length; i++) {
@@ -78,10 +79,12 @@ var initPhotoSwipe = function(gallerySelector) {
                 var thumbnail = slides[index].el.getElementsByTagName('img')[0], // find thumbnail
                     pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                     rect = thumbnail.getBoundingClientRect(); 
+
                 return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
             }
         };
-
+        
+        options.index = parseInt(index, 10);
         options.showAnimationDuration = 0;
         options.hideAnimationDuration = 0;
 
@@ -90,7 +93,7 @@ var initPhotoSwipe = function(gallerySelector) {
     };
 
     var galleryElements = document.querySelectorAll(gallerySelector);
-    galleryElements[0].onclick = onThumbnailsClick;    
+    galleryElements[0].onclick = onThumbnailsClick;
 };
 
 initPhotoSwipe('.section-photos');
