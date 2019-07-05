@@ -11,7 +11,6 @@
 
 html,
 body {
-    background-color: #fff;
     color: #555555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -80,11 +79,7 @@ header h1 {
 /* Navigation */
 /* -------------------------------------  */
 
-.main {
-    padding-bottom: 30px;
-    background: linear-gradient(rgba(255, 255, 255, 0.8),#efefef);
-    
-}
+.main { padding-bottom: 30px;}
 
 .nav-panel {
     width: 25%;
@@ -96,7 +91,7 @@ header h1 {
     font-size: 200%;
     display: none;
     margin-top: 25px;
-        margin-left: 5px;
+    margin-left: 5px;
 }
 
 .main-nav {
@@ -121,13 +116,9 @@ header h1 {
     transition: border-left 0.2s;
 }
 
-.menu-item:hover {
-    border-left: 3px solid #63cdda;
-}
+.menu-item:hover { border-left: 3px solid #63cdda; }
 
 .dropdown { display: none; }
-
-
 
 .album-link:link,
 .album-link:visited {
@@ -155,8 +146,6 @@ header h1 {
     width: 200px;
 }
 
-
-
 /* -------------------------------------  */
 /* Albums-mini */
 /* -------------------------------------  */
@@ -174,28 +163,23 @@ header h1 {
     float: left;
 }
 
-
-
 .album {
     width: 100%;
     overflow: hidden;
-    background-color: #000;
+    background-color: #fff;
     position: relative;
 }
-
-.album img { width: 100%; }
 
 .mobile-header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 10px 10px 20px 10px;
+    margin: 10px 10px 20px 10px;
+    padding: 5px 5px;
     text-decoration: none;
-    color: #fff;
+    color: #555;
     font-size: 110%;
     font-weight: 300;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0));
     display: none;   
     z-index: 100;
 }
@@ -208,57 +192,51 @@ header h1 {
 
 .hidden-header {
     opacity: 0;
-    color: #fff;
+    color: #555;
     transition: opacity 0.5s;
-    margin-left: 3%;
+    margin: 2%;
+    padding: 1%;
     font-size: 110%;
     font-weight: 300;
+    background-color: #fff;
 }
 
 .album p {
     opacity: 0;
     transition: opacity 0.5s;
-    color: #fff;
-    margin: 3%;
+    color: #555;
+    margin: 2%;
+    padding: 1%;
     font-size: 70%;
     line-height: 145%;
-    word-spacing: 2px;
+    word-spacing: 2px;  
+    background-color: #fff;
 }
-
-
 
 .album img {
     display:block;
-    transition: transform 0.5s, opacity 0.5s;
+    width: 100%;
+    transition: opacity 0.5s;
 }
 
-.album:hover img {
-    transform: scale(1.1);
-    opacity: 0.4;
-}
+.album:hover img { opacity: 0.7; }
 
-.album:hover .hidden-header {
-    opacity: 1;
-}
+.album:hover .hidden-header { opacity: 1; }
 
-.album:hover p {
-    opacity: 1;
-}
+.album:hover p { opacity: 1; }
 
 /* -------------------------------------  */
 /* ABOUT ME */
 /* -------------------------------------  */
 
-.section-aboutme {
-}
-
 .section-aboutme h2 {
+    
     font-weight: 300;
     font-size: 150%;
     text-align: center;
-    margin: 30px auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
-
 
 .section-aboutme h2:after {
     display: block;
@@ -369,7 +347,7 @@ footer h2 {
 /* -------------------------------------  */
 
 .section-album {
-    background: #f5f5f5;
+    /*background: #fff;*/
 }
 
 .section-album h2 { margin-top: 5px; }
@@ -384,6 +362,12 @@ footer h2 {
 
 .photo img {
     width: 100%;
+    transition: opacity 0.5s;
+}
+
+.photo:hover img 
+{
+    opacity: 0.7;
 }
 
 .left {
