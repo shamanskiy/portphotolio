@@ -393,3 +393,7 @@ footer h2 {
 .rigth {
     margin-right: 5%;
 }
+
+figcaption {
+    display: none;
+}
