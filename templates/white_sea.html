@@ -1,192 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="SophieSophie's photos.">
-        <link rel="stylesheet" type="text/css" href="../static/vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../static/vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="../static/resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="../static/resources/css/queries.css">
-        <link rel="stylesheet" type="text/css" href="../static/vendors/css/animate.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+{%extends "base.html"%}
+{%block content%}
         
-        <link rel="stylesheet" href="../static/vendors/dist/photoswipe.css"> 
-        <link rel="stylesheet" href="../static/vendors/dist/default-skin/default-skin.css"> 
-        
-        <link rel="shortcut icon" type="image/png" href="https://sophiesophie.s3.eu-central-1.amazonaws.com/favicon_64x64.png">
-        
-        <title>SophieSophie</title>
-    </head>
+<section class="section-aboutme section-album">
+<div class="row">&nbsp;</div>
+<div class="row">
+    <h2>White Sea</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</section>
 
-    <body>
-        <header>   
-            <a href="{{url_for('home')}}"><h1>&nbsp;&nbsp;&nbsp;&nbsp;Sophie<br>Sophie</h1></a>
-            <figure class="graph">
-                <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/mountain.svg" alt="Graphics">
-            </figure>
-        </header>
-        
-        <section class="section-aboutme section-album">
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <h2>White Sea</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<section class="section-photos">
+<div class="row">
+    <div class="col span-1-of-2">
+    <figure class="photo left">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f01.jpg" data-size="1440x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f01.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 1</figcaption>
+    </figure>
+    </div>
+
+    <div class="col span-1-of-2">
+    <figure class="photo right">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg" data-size="1446x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f02.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 2</figcaption>
+    </figure>
+    </div>
+</div>
+<div class="row">
+    <div class="col span-1-of-2">
+    <figure class="photo left">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f03.jpg" data-size="1446x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f03.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 3</figcaption>
+    </figure>
+    </div>
+
+    <div class="col span-1-of-2">
+    <figure class="photo right">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f04.jpg" data-size="1446x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f04.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 4</figcaption>
+    </figure>
+    </div>
+</div> 
+<div class="row">
+    <div class="col span-1-of-2">
+    <figure class="photo left">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f05.jpg" data-size="1440x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f05.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 5</figcaption>
+    </figure>
+    </div>
+
+    <div class="col span-1-of-2">
+    <figure class="photo right">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f06.jpg" data-size="1440x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f06.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 6</figcaption>
+    </figure>
+    </div>
+</div>     
+<div class="row">
+    <div class="col span-1-of-2">
+    <figure class="photo left">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f07.jpg" data-size="1440x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f07.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 7</figcaption>
+    </figure>
+    </div>
+
+    <div class="col span-1-of-2">
+    <figure class="photo right">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f08.jpg" data-size="1440x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f08.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 8</figcaption>
+    </figure>
+    </div>
+</div>  
+</section>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+    It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
         </div>
-        </section>
-        
-        
-        <section class="section-photos">
-        <div class="row">
-            <div class="col span-1-of-2">
-            <figure class="photo left">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f01.jpg" data-size="1440x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f01.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 1</figcaption>
-            </figure>
-            </div>
-            
-            <div class="col span-1-of-2">
-            <figure class="photo right">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f02.jpg" data-size="1446x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f02.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 2</figcaption>
-            </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-2">
-            <figure class="photo left">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f03.jpg" data-size="1446x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f03.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 3</figcaption>
-            </figure>
-            </div>
-            
-            <div class="col span-1-of-2">
-            <figure class="photo right">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f04.jpg" data-size="1446x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f04.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 4</figcaption>
-            </figure>
-            </div>
-        </div> 
-        <div class="row">
-            <div class="col span-1-of-2">
-            <figure class="photo left">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f05.jpg" data-size="1440x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f05.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 5</figcaption>
-            </figure>
-            </div>
-            
-            <div class="col span-1-of-2">
-            <figure class="photo right">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f06.jpg" data-size="1440x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f06.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 6</figcaption>
-            </figure>
-            </div>
-        </div>     
-        <div class="row">
-            <div class="col span-1-of-2">
-            <figure class="photo left">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f07.jpg" data-size="1440x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f07.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 7</figcaption>
-            </figure>
-            </div>
-            
-            <div class="col span-1-of-2">
-            <figure class="photo right">
-                <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1/f08.jpg" data-size="1440x1080">
-                    <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album1_mini/f08.jpg">
-                </a>
-                <figcaption itemprop="caption description">Photo 8</figcaption>
-            </figure>
-            </div>
-        </div>  
-        </section>
-        
-        <!-- Root element of PhotoSwipe. Must have class pswp. -->
-        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-            <!-- Background of PhotoSwipe. 
-            It's a separate element as animating opacity is faster than rgba(). -->
-            <div class="pswp__bg"></div>
-            
-            <!-- Slides wrapper with overflow:hidden. -->
-            <div class="pswp__scroll-wrap">
-                <!-- Container that holds slides. 
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-                <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                </div>
 
-                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                <div class="pswp__ui pswp__ui--hidden">
-                    <div class="pswp__top-bar">
-                        <!--  Controls are self-explanatory. Order can be changed. -->
-                        <div class="pswp__counter"></div>
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                        
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                                <div class="pswp__preloader__cut">
-                                    <div class="pswp__preloader__donut"></div>
-                                </div>
-                            </div>
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
                         </div>
                     </div>
-
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div> 
-                    </div>
-
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-                    <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
-                    </div>
                 </div>
             </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
         </div>
-        
-        <footer id="contacts">
-        <div class="row">
-            <h2>Contacts</h2>
-            <p class="email">photosophiesophie@gmail.com</p>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/sophie.sophie.718" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="#" class="telegram"><ion-icon name="ios-send"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/photo_sophiesophie/?igshid=7z2eh6zcj7v1" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>           
-        </div>
-        
-        <p class="created-by"><a href="https://github.com/Shamanskiy">Created by Alexander Shamanskiy</a></p> 
-        </footer>
-        
-        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-        
-        <script src="../static/vendors/dist/photoswipe.min.js"></script> 
-        <script src="../static/vendors/dist/photoswipe-ui-default.min.js"></script>
-        <script src="../static/resources/js/galleryscript.js"></script>
-    </body>
-</html>
+    </div>
+</div>
 
 
+<script src="../static/vendors/dist/photoswipe.min.js"></script> 
+<script src="../static/vendors/dist/photoswipe-ui-default.min.js"></script>
+<script src="../static/resources/js/galleryscript.js"></script>
+    
+{%endblock%}
