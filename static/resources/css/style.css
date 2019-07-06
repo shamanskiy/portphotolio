@@ -172,9 +172,7 @@ header h1 {
 
 .mobile-header {
     position: absolute;
-    top: 0;
     left: 0;
-    margin: 10px 10px 20px 10px;
     padding: 5px 5px;
     text-decoration: none;
     color: #555;
@@ -182,7 +180,16 @@ header h1 {
     font-weight: 300;
     display: none;   
     z-index: 100;
-    background-color: #fff;
+    
+    /*background-color: #fff;
+    margin: 10px 10px 20px 10px;
+    top: 0;*/
+    
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255,0.85),rgba(255, 255, 255, 0.8));
+    bottom:0;
+    
+    
 }
 
 .album-info {

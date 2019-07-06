@@ -72,6 +72,7 @@
         display: block;
     }
     
+    .album p { display: none;}
     
     .main-nav { 
         position: absolute;
