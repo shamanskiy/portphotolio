@@ -186,8 +186,10 @@ header h1 {
     top: 0;*/
     
     width: 100%;
-    background-image: linear-gradient(rgb(255, 255, 255,0.85),rgba(255, 255, 255, 0.8));
+    background-image: linear-gradient(rgb(255, 255, 255,0.7),rgba(255, 255, 255, 0.7));
     bottom:0;
+    
+    margin: 7px 7px;
     
     
 }
