@@ -50,7 +50,7 @@ $(document).ready(function() {
            $('nav').removeClass('sticky');
        }
    }, {
-       offset: '8px'
+       offset: '0px'
    });
     
      

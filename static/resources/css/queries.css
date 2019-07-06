@@ -24,9 +24,11 @@
     
     
     
-    .main { padding-bottom: 25px; }
+    .main { padding-bottom: 15px; }
     
     .albums-panel { margin-top: 15px; }
+    
+    .section-aboutme { padding-top: 25px; }
     
     .section-aboutme h2 { 
         margin-top: 0px;
@@ -97,7 +99,9 @@
     
     .album-info h3 {display: none; }
     
-    .main { padding-bottom: 20px; }
+    .main { padding-bottom: 5px; }
+    
+    .section-aboutme { padding-top: 20px; }
     
     .section-aboutme h2 { 
         margin-top: 0px;
@@ -152,7 +156,10 @@
         margin-bottom: 5px;
     }
     
-    .main { padding-bottom: 15px; }
+    .main { padding-bottom: 3px; }
+    
+    
+    .section-aboutme { padding-top: 15px; }
     
     .section-aboutme h2 { 
         margin-top: 0px;

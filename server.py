@@ -16,4 +16,4 @@ def crimea():
 
 if __name__ == "__main__":
     app.run(debug=True)
-    #app.run(host='131.264.70.53',port = "5010")
+    #app.run(host='192.168.0.4',port = "5010")

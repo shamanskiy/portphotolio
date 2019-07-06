@@ -1,9 +1,32 @@
-{%extends "base.html"%}
-{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SophieSophie's photos.">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../static/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../static/resources/css/queries.css">
+        <link rel="stylesheet" type="text/css" href="../static/vendors/css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="https://sophiesophie.s3.eu-central-1.amazonaws.com/favicon_64x64.png">
+        <link rel="stylesheet" href="../static/vendors/dist/photoswipe.css"> 
+        <link rel="stylesheet" href="../static/vendors/dist/default-skin/default-skin.css"> 
+        <title>SophieSophie</title>
+    </head>
+
+    <body>
+        <header>   
+            <a href="{{url_for('home')}}"><h1>&nbsp;&nbsp;&nbsp;&nbsp;Sophie<br>Sophie</h1></a>
+            <figure class="graph">
+                <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/mountain.svg" alt="Graphics">
+            </figure>
+        </header>
         
 <section class="main">
 <div class="row">
-    <div class="nav-panel">     
+    <div class="nav-panel js-album-panel">     
         <nav> 
             <a class="mobile-menu-btn js-menu-btn"><ion-icon name="menu" class="js-menu-icon"></ion-icon></a>
             <ul class="main-nav">
@@ -20,7 +43,7 @@
         </nav>       
     </div>
 
-    <div class="albums-panel js-album-panel">
+    <div class="albums-panel ">
         <div class="album-row">
             <div class="col span-1-of-2">
                 <a href="{{url_for('white_sea')}}">
@@ -62,4 +85,21 @@
 <script src="../static/vendors/js/jquery.waypoints.min.js"></script>
 <script src="../static/resources/js/script.js"></script>
         
-{%endblock%}
+<footer id="contacts">
+        <div class="row">
+            <h2>Contacts</h2>
+            <p class="email">photosophiesophie@gmail.com</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/sophie.sophie.718" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="telegram"><ion-icon name="ios-send"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/photo_sophiesophie/?igshid=7z2eh6zcj7v1" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>           
+        </div>
+            
+        <p class="created-by"><a href="https://github.com/Shamanskiy">Created by Alexander Shamanskiy</a></p> 
+        </footer>
+        
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> 
+        
+    </body>
+</html>
