@@ -14,6 +14,10 @@ def white_sea():
 def crimea():
     return render_template("crimea.html")
 
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
     #app.run(host='192.168.0.4',port = "5010")

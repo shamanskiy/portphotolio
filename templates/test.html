@@ -1,0 +1,93 @@
+{%extends "base.html"%}
+{%block content%}
+        
+<section class="section-aboutme section-album">
+<div class="row">&nbsp;</div>
+<div class="row">
+    <h2>Test</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</section>
+
+
+<section class="section-photos">
+<div class="row">
+    <div class="col span-1-of-2">
+    <figure class="photo left">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album3/f01.jpg" data-size="1620x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album3_mini/f01.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 1</figcaption>
+    </figure>
+    </div>
+
+    <div class="col span-1-of-2">
+    <figure class="photo right">
+        <a href="https://sophiesophie.s3.eu-central-1.amazonaws.com/album3/f02.jpg" data-size="1620x1080">
+            <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album3_mini/f02.jpg">
+        </a>
+        <figcaption itemprop="caption description">Photo 2</figcaption>
+    </figure>
+    </div>
+</div>
+ 
+</section>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+    It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../static/vendors/dist/photoswipe.min.js"></script> 
+<script src="../static/vendors/dist/photoswipe-ui-default.min.js"></script>
+<script src="../static/resources/js/galleryscript.js"></script>
+    
+{%endblock%}

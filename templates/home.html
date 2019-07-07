@@ -34,7 +34,8 @@
                     <a class="menu-item" id="js-navBtn1">Albums</a>
                     <div class="dropdown js-navDrop1">
                         <a class="album-link" href="{{url_for('white_sea')}}">White Sea</a>
-                        <a class="album-link" href="{{url_for('crimea')}}">Crimea</a>   
+                        <a class="album-link" href="{{url_for('crimea')}}">Crimea</a>
+                        <a class="album-link" href="{{url_for('test')}}">Test</a>   
                     </div>
                 </li>
                 <li><a class="menu-item" href="#aboutme">About me</a></li>
@@ -69,7 +70,23 @@
                     </figure>
                 </a>
             </div>
-        </div>                
+        </div> 
+        
+        <div class="album-row">
+            <div class="col span-1-of-2">
+                <a href="{{url_for('test')}}">
+                    <figure class="album">
+                        <h3 class="mobile-header"> Test </h3>
+                        <img src="https://sophiesophie.s3.eu-central-1.amazonaws.com/album3_mini/f01.jpg" alt="Test">
+                        <div class="album-info">
+                            <h3 class="hidden-header">Test</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            
+        </div> 
     </div>
 </div>
 </section>
